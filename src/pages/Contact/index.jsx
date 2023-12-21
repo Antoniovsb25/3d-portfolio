@@ -3,12 +3,16 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import Fox from "../../models/Fox";
 import Loader from "../../components/Loader";
+import useAlert from "../../hooks/useAlert";
+import Alert from "../../components/Alert";
 
 const ContactPage = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
+
+  const { alert, showAlert, hideAlert } = useAlert();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -41,9 +45,13 @@ const ContactPage = () => {
       )
       .then(() => {
         setLoading(false);
-        // show successs message
-        // hide an alert
+        showAlert({
+          show: true,
+          text: "Message sent successfully",
+          type: "success",
+        });
         setTimeout(() => {
+          hideAlert();
           setCurrentAnimation("idle");
           setForm({ name: "", email: "", message: "" });
         }, [3000]);
@@ -52,11 +60,17 @@ const ContactPage = () => {
         setCurrentAnimation("idle");
         setLoading(false);
         console.error("something went wrong", error);
+        showAlert({
+          show: true,
+          text: "I did not receive your message =(",
+          type: "danger",
+        });
       });
   };
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
+      {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in touch</h1>
         <form
@@ -70,6 +84,7 @@ const ContactPage = () => {
               type="text"
               name="name"
               className="input"
+              required
               value={form.name}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -82,6 +97,7 @@ const ContactPage = () => {
               type="email"
               name="email"
               className="input"
+              required
               value={form.email}
               onChange={handleChange}
               onFocus={handleFocus}
