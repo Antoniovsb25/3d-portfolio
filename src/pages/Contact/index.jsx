@@ -6,6 +6,7 @@ import Loader from "../../components/Loader";
 import useAlert from "../../hooks/useAlert";
 import Alert from "../../components/Alert";
 import { motion } from "framer-motion";
+import { logolinkedin, logowhatsapp } from "../../assets/icons";
 
 const ContactPage = () => {
   const formRef = useRef(null);
@@ -78,11 +79,11 @@ const ContactPage = () => {
     >
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in touch</h1>
+        <h1 className="head-text">Get in touch by email</h1>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="h-full flex flex-col gap-7 mt-14"
+          className="flex flex-col gap-7 mt-14"
         >
           <label className="text-black-500 font-semibold">
             Name
@@ -134,6 +135,23 @@ const ContactPage = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className="flex flex-row text-slate-500 items-center gap-4 mt-6">
+          <p>Or send me a message in:</p>
+          <a
+            href="https://www.linkedin.com/in/antonio-victor-basilio/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src={logolinkedin}
+              className="w-10 h-10 object-contain cursor-pointer"
+            />
+          </a>
+          <img
+            src={logowhatsapp}
+            className="w-10 h-10 object-contain cursor-pointer"
+          />
+        </div>
       </div>
       <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
         <Canvas camera={{ position: [0, 0, 5], fov: 75, near: 0.1, far: 1000 }}>
