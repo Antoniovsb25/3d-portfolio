@@ -1,19 +1,22 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
     <header className="header">
       <NavLink
         to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        className="bg-white text-lg rounded-lg items-center justify-center shadow-md px-4 font-bold hover:scale-110 duration-75"
       >
-        <p className="blue-gradient_text">AV</p>
+        <p className="blue-gradient_text">Home</p>
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            `bg-white rounded-lg items-center justify-center shadow-md px-4 font-semibold hover:scale-110 duration-75 ${
+              isActive ? "text-blue-500" : "text-black"
+            }`
           }
         >
           About
@@ -21,10 +24,12 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            `bg-white rounded-lg  items-center justify-center shadow-md px-4 font-semibold hover:scale-110 duration-75 ${
+              isActive ? "text-blue-500" : "text-black"
+            }`
           }
         >
-          projects
+          Projects
         </NavLink>
       </nav>
     </header>
