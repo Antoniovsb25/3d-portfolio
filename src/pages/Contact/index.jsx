@@ -5,6 +5,7 @@ import Fox from "../../models/Fox";
 import Loader from "../../components/Loader";
 import useAlert from "../../hooks/useAlert";
 import Alert from "../../components/Alert";
+import { motion } from "framer-motion";
 
 const ContactPage = () => {
   const formRef = useRef(null);
@@ -69,7 +70,12 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
+    <motion.section
+      className="relative flex lg:flex-row flex-col max-container h-[100vh]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in touch</h1>
@@ -142,7 +148,7 @@ const ContactPage = () => {
           <Suspense fallback={<Loader />} />
         </Canvas>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

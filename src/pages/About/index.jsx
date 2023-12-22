@@ -5,10 +5,16 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import CTA from "../../components/CTA";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
-    <section className="max-container">
+    <motion.section
+      className="max-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1 className="head-text">
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
@@ -90,7 +96,7 @@ const AboutPage = () => {
       </div>
       <hr className="border-slate-200" />
       <CTA />
-    </section>
+    </motion.section>
   );
 };
 

@@ -2,9 +2,15 @@ import { Link } from "react-router-dom";
 import { projects } from "../../constants/index";
 import { arrow } from "../../assets/icons";
 import CTA from "../../components/CTA";
+import { motion } from "framer-motion";
 const ProjectsPage = () => {
   return (
-    <section className="max-container">
+    <motion.section
+      className="max-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1 className="head-text">
         My{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
@@ -52,7 +58,7 @@ const ProjectsPage = () => {
       </div>
       <hr className="border-slate-200" />
       <CTA />
-    </section>
+    </motion.section>
   );
 };
 

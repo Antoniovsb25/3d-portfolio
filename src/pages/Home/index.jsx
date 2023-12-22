@@ -8,6 +8,7 @@ import Plane from "../../models/Plane.jsx";
 import HomeInfo from "../../components/HomeInfo/index.jsx";
 import sakura from "../../assets/sakura.mp3";
 import { soundoff, soundon } from "../../assets/icons/index.js";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -54,7 +55,12 @@ const HomePage = () => {
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
   return (
-    <section className="w-full h-screen relative">
+    <motion.section
+      className="w-full h-screen relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
@@ -98,7 +104,7 @@ const HomePage = () => {
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
