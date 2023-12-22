@@ -8,6 +8,9 @@ const InfoBox = ({ text, link, btnText }) => (
     className="info-box"
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
+    initial={{ opacity: 0, y: 50, scale: 0.3 }}
+    animate={{ opacity: 1, y: 0, scale: 1 }}
+    exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.5 } }}
   >
     <p className="font-medium sm:text-xl text-center">{text}</p>
     <Link className="neo-brutalism-white neo-btn" to={link}>
@@ -19,7 +22,13 @@ const InfoBox = ({ text, link, btnText }) => (
 
 const renderContent = {
   1: (
-    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      initial={{ opacity: 0, y: 50, scale: 0.3 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.5 } }}
+    >
       <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
         Hi there! <strong>Antonio</strong> here! <br></br> Your favorite
         software engineer speaking directly from Brazil
