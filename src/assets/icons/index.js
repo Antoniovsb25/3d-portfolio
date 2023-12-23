@@ -28,6 +28,11 @@ import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
 import logolinkedin from "./logolinkedin.svg";
 import logowhatsapp from "./logowhatsapp.svg";
+import mysql from "./mysql.svg";
+import graphql from "./graphql.svg";
+import firebase from "./firebase.svg";
+import androidstudio from "./androidstudio.svg";
+import xcode from "./xcode.svg";
 
 export {
   css,
@@ -60,4 +65,9 @@ export {
   soundoff,
   logolinkedin,
   logowhatsapp,
+  mysql,
+  graphql,
+  firebase,
+  androidstudio,
+  xcode,
 };

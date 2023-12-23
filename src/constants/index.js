@@ -12,7 +12,6 @@ import {
   linkedin,
   mongodb,
   motion,
-  mui,
   nextjs,
   nodejs,
   pricewise,
@@ -24,19 +23,25 @@ import {
   tailwindcss,
   threads,
   typescript,
+  mysql,
+  graphql,
+  firebase,
+  androidstudio,
+  xcode,
 } from "../assets/icons";
 
 export const skills = [
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
   {
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
   },
-  {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
+
   {
     imageUrl: git,
     name: "Git",
@@ -48,39 +53,14 @@ export const skills = [
     type: "Version Control",
   },
   {
-    imageUrl: html,
-    name: "HTML",
-    type: "Frontend",
-  },
-  {
     imageUrl: javascript,
     name: "JavaScript",
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
-    imageUrl: mui,
-    name: "Material-UI",
+    imageUrl: typescript,
+    name: "TypeScript",
     type: "Frontend",
-  },
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
-    type: "Frontend",
-  },
-  {
-    imageUrl: nodejs,
-    name: "Node.js",
-    type: "Backend",
   },
   {
     imageUrl: react,
@@ -93,6 +73,36 @@ export const skills = [
     type: "State Management",
   },
   {
+    imageUrl: graphql,
+    name: "GraphQL",
+    type: "API",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: firebase,
+    name: "Firebase",
+    type: "CloudService",
+  },
+  {
+    imageUrl: xcode,
+    name: "Xcode",
+    type: "MobileSimulator",
+  },
+  {
+    imageUrl: androidstudio,
+    name: "AndroidStudio",
+    type: "MobileSimulator",
+  },
+  {
+    imageUrl: motion,
+    name: "Motion",
+    type: "Animation",
+  },
+  {
     imageUrl: sass,
     name: "Sass",
     type: "Frontend",
@@ -103,9 +113,24 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    imageUrl: express,
+    name: "Express",
+    type: "Backend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: mysql,
+    name: "MySQL",
+    type: "Database",
   },
 ];
 
