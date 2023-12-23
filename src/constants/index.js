@@ -145,11 +145,12 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: hmart,
+    title: "Front-end Developer",
+    company_name: "Motorola EMEA Project",
+    icon: corebiz,
+    project_icon: motorola,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    date: "Oct 2021 - Apr 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -158,11 +159,12 @@ export const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: hmart,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    title: "Front-end Developer",
+    company_name: "Whirlpool EMEA Project",
+    icon: corebiz,
+    project_icon: whirlpool,
+    iconBg: "#ffd154",
+    date: "Apr 2023 - Oct 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -171,24 +173,12 @@ export const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
+    title: "Mobile Developer",
+    company_name: "H Mart project",
+    icon: corebiz,
+    project_icon: hmart,
+    iconBg: "#ea1a1e",
+    date: "Oct 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

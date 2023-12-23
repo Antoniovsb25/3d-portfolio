@@ -76,7 +76,11 @@ const AboutPage = () => {
                     {experience.title}
                   </h3>
                   <p className="text-black-500 font-medium font-base">
-                    {experience.company_name}
+                    {experience.company_name}{" "}
+                    <img
+                      className="inline w-6 h-6 ml-2"
+                      src={experience.project_icon}
+                    />
                   </p>
                 </div>
                 <ul className="my-5 list-disc ml-5 space-y-2">
