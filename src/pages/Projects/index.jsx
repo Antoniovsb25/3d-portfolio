@@ -18,7 +18,18 @@ const ProjectsPage = () => {
         </span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>All of my projects for you</p>
+        <p>
+          Here are some highlighted projects that I've built. You can check out
+          all my repositories on{" "}
+          <a
+            className="underline"
+            href="https://github.com/Antoniovsb25"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub.
+          </a>
+        </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project, index) => (

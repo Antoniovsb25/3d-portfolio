@@ -12,13 +12,14 @@ import { motion } from "framer-motion";
 
 const HomePage = () => {
   const audioRef = useRef(new Audio(sakura));
-  audioRef.current.volume = 0.01;
-  audioRef.current.loop = true;
+
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(true);
 
   useEffect(() => {
+    audioRef.current.volume = 0.01;
+    audioRef.current.loop = true;
     if (isPlayingMusic) audioRef.current.play();
     return () => audioRef.current.pause();
   }, [isPlayingMusic]);

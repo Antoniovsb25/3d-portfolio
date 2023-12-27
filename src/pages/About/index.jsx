@@ -22,7 +22,14 @@ const AboutPage = () => {
         </span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Software Engineer</p>
+        <p>
+          Software engineer with over 2 years of experience creating and
+          maintaining websites and applications for multinational companies.
+          Committed to scalable, high-performance, user-focused products.
+          Passionate about helping others, participating in important decisions.
+          Constantly seeking new challenges for continuous improvement and
+          learning.
+        </p>
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
@@ -44,7 +51,7 @@ const AboutPage = () => {
       <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>I've worked with several international companies</p>
+          <p>I took part in some international projects. Here they are:</p>
         </div>
         <div className="mt-12 flex">
           <VerticalTimeline>

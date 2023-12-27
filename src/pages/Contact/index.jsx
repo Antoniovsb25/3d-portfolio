@@ -6,7 +6,7 @@ import Loader from "../../components/Loader";
 import useAlert from "../../hooks/useAlert";
 import Alert from "../../components/Alert";
 import { motion } from "framer-motion";
-import { logolinkedin, logowhatsapp } from "../../assets/icons";
+import { logolinkedin } from "../../assets/icons";
 
 const ContactPage = () => {
   const formRef = useRef(null);
@@ -79,7 +79,7 @@ const ContactPage = () => {
     >
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in touch by email</h1>
+        <h1 className="head-text text-center">Get in touch by email</h1>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -147,10 +147,6 @@ const ContactPage = () => {
               className="w-10 h-10 object-contain cursor-pointer"
             />
           </a>
-          <img
-            src={logowhatsapp}
-            className="w-10 h-10 object-contain cursor-pointer"
-          />
         </div>
       </div>
       <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">

@@ -30,28 +30,28 @@ const renderContent = {
       exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.5 } }}
     >
       <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
-        Hi there! <strong>Antonio</strong> here! <br></br> Your favorite
-        software engineer speaking directly from Brazil
+        Hi there! 👋 <strong>Antonio</strong> here! <br></br> Your favorite
+        software engineer
       </h1>
     </motion.div>
   ),
   2: (
     <InfoBox
-      text={"Experience working in large-scale international projects"}
+      text={"Experience working in large-scale international projects 🌎"}
       link={"/about"}
       btnText={"Learn More about me!"}
     />
   ),
   3: (
     <InfoBox
-      text={"Would you like to see a bit more of what I can do?"}
+      text={"Would you like to see a bit more of what I can do? 👀"}
       link={"/projects"}
       btnText={"Visit my portfolio"}
     />
   ),
   4: (
     <InfoBox
-      text={"Don't be shy and send me a message"}
+      text={"Don't be shy and send me a message ✉️"}
       link={"/contact"}
       btnText={"Let's talk"}
     />

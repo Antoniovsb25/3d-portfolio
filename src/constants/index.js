@@ -152,10 +152,10 @@ export const experiences = [
     iconBg: "#accbe1",
     date: "Oct 2021 - Apr 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participated in the development and maintenance of almost 30 Motorola EMEA B2C and B2B websites.",
+      "actively participated in daily meetings with the client in order to understand and define the next steps in the project",
+      "mentored a junior front-end developer on the team, helping her develop her skills in React.js, Typescript and clean code.",
+      "Collaborated with the CRO team to develop A/B tests, increasing conversion by up to 20%.",
     ],
   },
   {
@@ -166,8 +166,8 @@ export const experiences = [
     iconBg: "#ffd154",
     date: "Apr 2023 - Oct 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Helped develop and build Whirlpool's sites in the EMEA region.",
+      "Implemented more than 30 e-commerce events to be monitored by Google Analytics and thus offer powerful insights into user behavior on the websites.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -180,10 +180,8 @@ export const experiences = [
     iconBg: "#ea1a1e",
     date: "Oct 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Implementing multiple app screens, such as login, PDP and store locator",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];
